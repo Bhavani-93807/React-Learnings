@@ -1,37 +1,46 @@
-import React,{useEffect, useState} from 'react';
-
+import React, { useEffect, useState } from "react";
 
 const Form = () => {
   const [data, setData] = useState({
-    username: '',
-    password:''
-  })
-  const {username, password} =data;
-  const changeHandler = e =>{
-    setData({...data, [e.target.name]:[e.target.value]})
-    }
+    username: "",
+    password: "",
+  });
+  const { username, password } = data;
+  const changeHandler = (e) => {
+    setData({ ...data, [e.target.name]: [e.target.value] });
+  };
 
-useEffect(() =>{
-    localStorage.setItem("username",username)
-},[data])
+  useEffect(() => {
+    localStorage.setItem("username", username);
+  }, [data]);
 
-    const submitHandler = e => {
-      e.preventDefault()
-      console.log(data)
-      }
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(data);
+  };
   return (
     <div>
-     <center>
-     <form onSubmit= {submitHandler}>
-      <input type ="text" name="username" value={username} onChange = {changeHandler} /> <br></br>
-      <input type = "password" name="password" value= {password} onChange = {changeHandler}  /><br></br>
-      <input type="submit" name= "submit" />
-     </form>
-     </center>
+      <center>
+        <form onSubmit={submitHandler}>
+          <input
+            type="text"
+            name="username"
+            value={username}
+            onChange={changeHandler}
+          />{" "}
+          <br></br>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={changeHandler}
+          />
+          <br></br>
+          <input type="submit" name="submit" />
+        </form>
+      </center>
     </div>
-  )
-}
+  );
+};
 
-export default Form
-
-
+export default Form;
