@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 
 
 const Form = () => {
@@ -10,6 +10,11 @@ const Form = () => {
   const changeHandler = e =>{
     setData({...data, [e.target.name]:[e.target.value]})
     }
+
+useEffect(() =>{
+    localStorage.setItem("username",username)
+},[data])
+
     const submitHandler = e => {
       e.preventDefault()
       console.log(data)
