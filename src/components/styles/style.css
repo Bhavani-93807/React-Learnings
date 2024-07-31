@@ -1,0 +1,37 @@
+    
+.form-container{
+    max-width: 450px;
+    min-width: 400px;
+    max-height: 400px;
+    
+    margin: 10px;
+    padding:20px;
+
+.storage-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: flex-start;
+
+    input{
+        padding:8px;
+        outline: none;
+        width:95%;
+        margin: 5px;
+
+    }
+    button{
+        padding:5px 10px;
+        margin:5px;
+        width:100px;
+        border: none;
+        background: #93d293;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        
+
+
+    }
+}
+}

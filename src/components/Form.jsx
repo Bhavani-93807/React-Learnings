@@ -19,27 +19,32 @@ const Form = () => {
     console.log(data);
   };
   return (
-    <div>
-      <center>
-        <form onSubmit={submitHandler}>
+    <>
+    <div className="form-container">
+    <h2>Storage Form</h2>
+    
+      
+        <form className="storage-form" onSubmit={submitHandler}>
           <input
             type="text"
             name="username"
             value={username}
             onChange={changeHandler}
           />{" "}
-          <br></br>
+         
           <input
             type="password"
             name="password"
             value={password}
             onChange={changeHandler}
           />
-          <br></br>
-          <input type="submit" name="submit" />
+       <button> Save</button>
         </form>
-      </center>
+      
     </div>
+    
+    </>
+
   );
 };
 
