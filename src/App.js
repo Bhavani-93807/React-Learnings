@@ -1,6 +1,7 @@
 
 import React from 'react'
-import Axiosfunction from '../components/Axiosfunction'
+import Axiosfunction from './components/Axiosfunction'
+
 
 const App = () => {
   return (
