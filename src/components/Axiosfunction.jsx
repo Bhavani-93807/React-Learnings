@@ -10,7 +10,7 @@ useEffect(()=>{
 },[])
  return (
    <div>
-     {data.map(item => <li>{item.title}</li>)}
+     {data.map(item => <li key={item.id}>{item.title}</li>)}
    </div>
  )
 }
