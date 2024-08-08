@@ -1,15 +1,11 @@
+
 import React from 'react'
-
-
-import Fetch from './components/Fetch'
-import Calculator from './components/Calculator'
+import Axiosfunction from '../components/Axiosfunction'
 
 const App = () => {
   return (
     <div>
-      <Calculator />
-
-   
+      <Axiosfunction />
     </div>
   )
 }
