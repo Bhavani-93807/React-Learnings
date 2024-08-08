@@ -1,10 +1,15 @@
 import React from 'react'
-import Home from './pages/Home'
+
+
+import Fetch from './components/Fetch'
+import Calculator from './components/Calculator'
 
 const App = () => {
   return (
     <div>
-      <Home />
+      <Calculator />
+
+   
     </div>
   )
 }
