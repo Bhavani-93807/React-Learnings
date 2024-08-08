@@ -1,4 +1,4 @@
-h2{
+/* h2{
   color:aqua;
   background-color: darkblue;
   padding:50px;
@@ -6,4 +6,8 @@ h2{
 }
 .container{
   margin: 10px;
-}
+} */
+ button{
+  padding:5px;
+  margin:5px;
+ }
