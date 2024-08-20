@@ -35,7 +35,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator-container">
-      <center>
+     
         <input type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -55,7 +55,7 @@ const Calculator = () => {
             ))}
           </div>
         ))}
-      </center>
+      
     </div>
   );
 };
