@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div>
-      Header component
+       <h4>Welcome to HomePage!!</h4>
     </div>
   )
 }
