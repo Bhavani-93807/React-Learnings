@@ -1,14 +1,13 @@
+import React from "react";
 
-import React from 'react'
-import Axiosfunction from './components/Axiosfunction'
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <div>
-      <Axiosfunction />
+      <Navbar />
     </div>
-  )
-}
+  );
+};
 
-export default Home
-
+export default Home;
